@@ -1,27 +1,24 @@
 <template>
-  <div id="app">
-    <IntroSection />
+  <div>
+    <nav-bar />
+    <intro-section-block />
   </div>
 </template>
 
 <script>
+// Import our components from component directory
 import IntroSection from './components/Intro/IntroSection.vue'
+import NavBar from './components/Nav/NavBar.vue'
 
+// use our components in our App.vue template
 export default {
-  name: 'app',
   components: {
-    IntroSection
+    introSectionBlock: IntroSection,
+    navBar: NavBar
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
