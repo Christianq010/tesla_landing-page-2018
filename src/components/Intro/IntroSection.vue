@@ -1,7 +1,7 @@
 <template>
   <div class="main-content">
-    <h1 class="heading">Quickest Acceleration.</h1>
-    <h1 class="heading">Longest Range. The Safest Cars Ever.</h1>
+    <h1>Quickest Acceleration.</h1>
+    <h1>Longest Range. The Safest Cars Ever.</h1>
     <div class="btn-wrapper">
       <ActionButton msg="Order yours"/>
       <ActionButton msg="new inventory"/>
@@ -30,6 +30,7 @@ export default {
 @import './../../assets/CSS/normalize.css';
 @import './../../assets/CSS/webflow.css';
 
+/* Test CSS */
 body {
   background-color: grey;
 }
@@ -57,7 +58,7 @@ h1 {
   text-align: center;
 }
 
-.heading {
+h1 {
   margin-bottom: 25px;
   font-family: Montserrat, sans-serif;
   font-size: 42.5px;
