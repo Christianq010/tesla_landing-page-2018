@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="container w-container">
-            <a href="#" class="footer-link">Tesla Motors 2016
+            <a href="#" class="footer-link">Tesla © 2018
                 <span><icon name="circle"></icon></span>
             </a>
             <a href="#" class="footer-link">Privacy &amp; Legal
