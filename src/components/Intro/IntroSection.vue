@@ -10,7 +10,7 @@
     </div>
     <div class="small-wrapper-link">
       <a class="border-right small-link" href="#">GET THE NEWSLETTER
-        <span class="caret-icon"><icon name="caret-right"></icon></span>
+        <span><icon name="caret-right"></icon></span>
       </a>
     </div>
   </div>
@@ -19,7 +19,6 @@
 <script>
 import ActionButton from './ActionButton.vue'
 // Import Font Awesome Icons
-import Vue from 'vue'
 import 'vue-awesome/icons/caret-right'
 import Icon from 'vue-awesome/components/Icon'
 

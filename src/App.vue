@@ -1,8 +1,9 @@
 <template>
   <div>
+      <!-- Our Nav Bar Component -->
       <nav-bar />
+      <!-- Main Content and Buttons -->
       <intro-section-block />
-      <video-g></video-g>
   </div>
 </template>
 
