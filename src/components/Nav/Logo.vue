@@ -6,13 +6,10 @@
 </template>
 
 <script>
-// import Tesla Logo
-import teslaLogo from './../../assets/logo.png'
 
 export default {
 
 }
-
 
 </script>
 
