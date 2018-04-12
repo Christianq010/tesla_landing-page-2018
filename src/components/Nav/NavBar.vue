@@ -5,6 +5,10 @@
       <div class="small-nav-menu">
         <a href="#" class="small-nav-item">Shop</a>
         <a href="#" class="small-nav-item">Sign in</a>
+        <!-- Side Menu -->
+        <a href="#" class="small-nav-item">
+          <hamburger-menu />
+        </a>
       </div>
       <!-- Tesla Logo -->
       <logo />
@@ -21,25 +25,34 @@
 </template>
 
 <script>
-// import Tesla Logo
+// Import Tesla Logo
 import teslaLogo from './Logo.vue'
+import Hamburgermenu from './Menu.vue'
 
 export default {
     components: {
-        logo: teslaLogo
+        logo: teslaLogo,
+        hamburgerMenu: Hamburgermenu
     }
 }
 
-
 </script>
 
-<style>
+<style scoped>
 @import './../../assets/CSS/normalize.css';
 @import './../../assets/CSS/webflow.css';
 @import './../../assets/CSS/custom.css';
 
+nav {
+  margin-top: 1.3em;
+}
+
 a:hover {
     color: #666;
+}
+
+.small-nav-item {
+    padding: 12% 10px;
 }
 
 </style>
