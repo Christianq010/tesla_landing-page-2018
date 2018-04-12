@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "vue": "^2.5.13",
+    "vue-awesome": "^3.0.0",
     "vue-videobg": "^2.0.0"
   },
   "devDependencies": {

@@ -3,24 +3,31 @@
     <h1>Quickest Acceleration.</h1>
     <h1>Longest Range. The Safest Cars Ever.</h1>
     <div class="btn-wrapper">
-      <ActionButton msg="Order yours"/>
-      <ActionButton msg="new inventory"/>
-      <ActionButton msg="used inventory"/>
-      <ActionButton msg="test drive"/>
+      <action-btn msg="Order yours"/>
+      <action-btn msg="new inventory"/>
+      <action-btn msg="used inventory"/>
+      <action-btn msg="test drive"/>
     </div>
     <div class="small-wrapper-link">
-      <a class="border-right small-link" href="#">GET THE NEWSLETTER &gt;</a>
+      <a class="border-right small-link" href="#">GET THE NEWSLETTER
+        <span class="caret-icon"><icon name="caret-right"></icon></span>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
 import ActionButton from './ActionButton.vue'
+// Import Font Awesome Icons
+import Vue from 'vue'
+import 'vue-awesome/icons/caret-right'
+import Icon from 'vue-awesome/components/Icon'
 
 export default {
   name: 'app',
   components: {
-    ActionButton
+    ActionBtn: ActionButton,
+    icon: Icon
   }
 }
 
@@ -96,5 +103,10 @@ h1 {
   margin-top: 0px;
   padding-top: 20px;
   padding-bottom: 5px;
+}
+
+/* Icon */
+.fa-icon {
+  padding: 0.3em 0 0 0;
 }
 </style>
