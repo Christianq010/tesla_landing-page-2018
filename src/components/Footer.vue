@@ -19,6 +19,10 @@
             <a href="#" class="footer-link">Locations
                 <span><icon name="circle"></icon></span>
             </a>
+            <!-- Flag Icons Declared Globally -->
+            <a href="#" class="footer-link">
+                <span><flag iso="us" /></span>
+            </a>
         </div>
     </div>  
 </template>
