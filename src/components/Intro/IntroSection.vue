@@ -87,6 +87,7 @@ h1 {
 }
 
 .small-link:hover {
+  transition: color 0.25s;
   color: red;
 }
 
