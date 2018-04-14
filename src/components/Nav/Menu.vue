@@ -138,6 +138,7 @@
         padding: 20px 10px;
         color: #141414;
         font-size: 13px;
+        font-weight: 400;
         border-bottom: 1px solid #ddd;
         text-decoration: none;
         display: block;
