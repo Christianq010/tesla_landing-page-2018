@@ -29,10 +29,12 @@ button {
   font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
+  border: solid 1px transparent;
 }
 
 button:hover {
-    border: 1px solid white;
+  transition: border-color .7s;
+  border: 1px solid white;
 }
 
 .action-button.btn-grey {
