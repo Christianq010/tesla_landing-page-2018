@@ -43,21 +43,23 @@ export default {
 @import './../../assets/CSS/webflow.css';
 @import './../../assets/CSS/custom.css';
 
-nav {
-  margin-top: 1.3em;
-}
+  nav {
+    margin-top: 1.3em;
+  }
 
-a:hover {
+
+  a:hover {
+    transition: color 0.75s;
     color: #666;
-}
+  }
 
-/* Ignore hover on Hamburger */
-#hamburger-menu:hover {
-  color: white;
-}
+  /* Ignore hover on Hamburger */
+  #hamburger-menu:hover {
+    color: white;
+  }
 
-.small-nav-item {
-    padding: 12% 10px;
-}
+  .small-nav-item {
+      padding: 12% 10px;
+  }
 
 </style>
