@@ -4,27 +4,32 @@
         <span 
             class="nav-slideout-opener"
             v-on:click="toggle">
-            <icon name="bars"></icon>
+                <icon name="bars"></icon>
         </span>
-        <div 
-            class="sidenav"
-            v-show="isOpen">
-            <!-- Close Icon -->
-            <span 
-                class="x-icon"
-                v-on:click="toggle">
-                    <icon name="times"></icon>
-            </span>
-            <!-- Nav Menu Items -->
-            <ul>
-                <li class="nav-slideout-item"
-                    v-for="item in menu" :key="item">
-                        <a href="#">
-                            {{item}}
-                        </a>
-                </li>
-            </ul>
-        </div>
+        <transition name="slide" type="animation">
+            <div 
+                class="sidenav"
+                v-show="isOpen">
+                <!-- Close Icon -->
+                <span 
+                    class="x-icon"
+                    v-on:click="toggle">
+                <transition
+                    enter-active-class="animated rotateIn">
+                        <icon name="times"></icon>
+                </transition>
+                </span>
+                <!-- Nav Menu Items -->
+                <ul>
+                    <li class="nav-slideout-item"
+                        v-for="item in menu" :key="item">
+                            <a href="#">
+                                {{item}}
+                            </a>
+                    </li>
+                </ul>
+            </div>
+        </transition>
         <!-- BG Mask Component-->
         <bg-mask v-show="isOpen"></bg-mask>
     </div>
@@ -72,6 +77,39 @@
 </script>
 
 <style scoped>
+    /* Side Menu Animation */
+    .slide-enter {
+        opacity: 0;
+        /* transform: translateY(20px) */
+    }
+    .slide-enter-active {
+        animation: slide-in 0.35s ease-out forwards;
+        transition: opacity .5s;
+    }
+    .slide-leave {
+        /* opacity: 1; */
+    }
+    .slide-leave-active {
+        animation: slide-out 0.25s ease-out forwards;
+        transition: opacity 3s;
+        opacity: 0;
+    }
+    @keyframes slide-in {
+        from {
+            width: 0%
+        }
+        to {
+            width: 200px;
+        }
+    }
+    @keyframes slide-out {
+        from {
+            width: 200px;
+        }
+        to {
+            width: 0%;
+        }
+    }
 
     /* Side Menu Navigation */
     .sidenav {
