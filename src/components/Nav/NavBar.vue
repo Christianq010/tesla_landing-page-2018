@@ -6,7 +6,7 @@
         <a href="#" class="small-nav-item">Shop</a>
         <a href="#" class="small-nav-item">Sign in</a>
         <!-- Side Menu -->
-        <a href="#" class="small-nav-item">
+        <a href="#" class="small-nav-item" id="hamburger-menu">
           <hamburger-menu />
         </a>
       </div>
@@ -49,6 +49,11 @@ nav {
 
 a:hover {
     color: #666;
+}
+
+/* Ignore hover on Hamburger */
+#hamburger-menu:hover {
+  color: white;
 }
 
 .small-nav-item {
