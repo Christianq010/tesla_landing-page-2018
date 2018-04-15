@@ -1,6 +1,6 @@
 <template>
   <div>
-      <!-- Our Nav Bar Component -->
+      <!-- Our Nav Bar Component and Side Menu -->
       <nav-bar />
       <!-- Main Content and Buttons -->
       <intro-section-block />

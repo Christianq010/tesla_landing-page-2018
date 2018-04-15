@@ -47,7 +47,6 @@ export default {
     margin-top: 1.3em;
   }
 
-
   a:hover {
     transition: color 0.75s;
     color: #666;
