@@ -4,7 +4,11 @@
         <span 
             class="nav-slideout-opener"
             v-on:click="toggle">
-                <icon name="bars"></icon>
+                <icon v-if="isOpen===false"  name="bars"></icon>
+                <transition
+                    enter-active-class="animated rotateIn">
+                        <icon v-if="isOpen" name="bars"></icon>
+                </transition>
         </span>
         <transition name="slide" type="animation">
             <div 
@@ -14,10 +18,10 @@
                 <span 
                     class="x-icon"
                     v-on:click="toggle">
-                <transition
-                    enter-active-class="animated rotateIn">
-                        <icon name="times"></icon>
-                </transition>
+                    <transition appear
+                        enter-active-class="animated rotateIn">
+                            <icon name="times"></icon>
+                    </transition>
                 </span>
                 <!-- Nav Menu Items -->
                 <ul>
@@ -122,7 +126,7 @@
         background-color: rgba(255,255,255,0.95);
         border-left: 1px solid #f2f2f2;
         overflow-x: hidden;
-        padding-top: 20px;
+        padding-top: 1%;
     }
     .sidenav ul {
         transition: right 300ms ease-in-out;
@@ -150,7 +154,7 @@
         background: transparent;
     }
     .x-icon {
-        margin: 0 0 0 80%;
+        margin: 0 0 0 67%;
         color: #141414;
     }
     svg {
