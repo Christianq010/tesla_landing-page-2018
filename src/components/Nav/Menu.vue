@@ -9,7 +9,7 @@
         <transition name="slide" type="animation">
             <div 
                 class="sidenav"
-                v-show="isOpen">
+                v-if="isOpen">
                 <!-- Close Icon -->
                 <span 
                     class="x-icon"
@@ -31,7 +31,7 @@
             </div>
         </transition>
         <!-- BG Mask Component-->
-        <bg-mask v-show="isOpen"></bg-mask>
+        <bg-mask v-show="isOpen" v-on:click.native="close"></bg-mask>
     </div>
 </template>
 
