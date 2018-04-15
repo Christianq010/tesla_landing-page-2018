@@ -1,6 +1,6 @@
 # 2018 Tesla Motors Landing Page 
 
-This project is a clone of the [Tesla Motors](https://tesla.com/) landing page (04/2018) built with Vue JS.
+This project is a clone of the [Tesla Motors](https://tesla.com/) landing page (04/2018) built with [Vue JS](https://vuejs.org/).
 
 A Tool used to aid the Front-End Design - [Webflow](https://webflow.com/).
 
@@ -34,6 +34,9 @@ yarn build
 ```
 
 For a detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+### Note
+> Mobile & Tablet responsive designs have not been done yet. 
 
 ### Resources 
 * Global CSS Styling in Vue - https://badacadabra.github.io/Using-global-style-rules-in-a-Vue-js-app/
