@@ -43,3 +43,4 @@ For a detailed explanation on how things work, consult the [docs for vue-loader]
 * Vue Font Awesome - https://github.com/Justineo/vue-awesome
 * Vue Flag icons - https://www.npmjs.com/package/vue-flag-icon
 * Animate CSS - https://daneden.github.io/animate.css/
+* Video to gif converter - https://www.aconvert.com/video/
